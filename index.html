@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <title>World Register Certification</title>
+
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -13,26 +14,31 @@
       content="no-cache, no-store, must-revalidate"
     />
     <meta http-equiv="Pragma" content="no-cache" />
-
     <!-- Chrome, Firefox OS y Opera -->
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#18236c" />
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#000000" />
+    <meta name="msapplication-navbutton-color" content="#18236c" />
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#18236c" />
 
     <meta name="author" content="By Alex P. Montero" />
     <meta name="application-name" content="Sitio web oficial World Register" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Prestamos servicios de auditoría y certificación de Sistemas de Gestión Ambiental y de la Seguridad y Salud en el Trabajo"
+    />
 
     <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="World Register" />
     <meta property="og:url" content="http://www.wrregister.com/" />
     <meta property="og:site_name" content="World Register" />
-    <meta property="og:image" itemprop="image" content="imgs/bg_seo.png" />
-    <meta property="og:description" content="" />
+    <meta property="og:image" itemprop="image" content="imgs/bg_seo.jpg" />
+    <meta
+      property="og:description"
+      content="Prestamos servicios de auditoría y certificación de Sistemas de Gestión Ambiental y de la Seguridad y Salud en el Trabajo"
+    />
 
     <script
       type="module"
@@ -61,7 +67,9 @@
             <h3 class="ttl_primary">Somos un organismo de certificación</h3>
             <h1 class="ttl_home">líder a nivel nacional</h1>
             <div class="text-center mt-4">
-              <a href="#" class="btn btn_border">Conoce nuestros servicios</a>
+              <a href="servicios.html" class="btn btn_border"
+                >Conoce nuestros servicios</a
+              >
             </div>
           </div>
         </div>
@@ -70,26 +78,32 @@
 
     <section class="wrapper_data">
       <div class="drawer_data">
-        <div class="box_item_data">
+        <div class="box_item_data address">
           <div class="item_data">
             <span class="ico"><ion-icon name="location"></ion-icon></span
-            ><a href="" class="data"
+            ><a
+              href="https://goo.gl/maps/smF2tPgV44jQJhHG6"
+              target="_blank"
+              class="data"
               >Paseo de la Ceiba esq. La Pigua Num.102, Int. 202, Col. 1ro de
               Mayo, CP 86190. Villahermosa, Tabasco, México.</a
             >
           </div>
         </div>
-        <div class="box_item_data">
+        <div class="box_item_data mail">
           <div class="item_data">
             <span class="ico"><ion-icon name="mail-outline"></ion-icon></span
-            ><a href="" class="data">atencionaclientes@wrregister.com</a>
+            ><a href="mailto:atencionaclientes@wrregister.com" class="data"
+              >atencionaclientes@wrregister.com</a
+            >
           </div>
         </div>
         <div class="box_item_data">
           <div class="item_data">
             <span class="ico"><ion-icon name="call"></ion-icon></span>
             <div class="data">
-              <a href="#" class="phone">(993) 3524257 </a> <br />
+              <a href="tel:+559933524257" class="phone">(993) 3524257 </a>
+              <br />
               <span>Lunes a Viernes de 8:00 a 17:00 hrs.</span>
             </div>
           </div>
@@ -114,7 +128,7 @@
                 procesos es nuestra misión.
               </p>
               <div class="text-left">
-                <a href="#" class="btn btn_primary"
+                <a href="contacto.html" class="btn btn_primary"
                   >HABLA CON NUESTROS EXPERTOS</a
                 >
               </div>
@@ -225,7 +239,9 @@
           general.
         </p>
         <div class="text-center mt-4">
-          <a href="#" class="btn btn_secundary"> Documentación pública </a>
+          <a href="documentacion.html" class="btn btn_secundary">
+            Documentación pública
+          </a>
         </div>
       </div>
     </section>
@@ -246,6 +262,7 @@
     <script>
       $(document).ready(function () {
         loadComponents();
+        menu();
       });
     </script>
   </body>
