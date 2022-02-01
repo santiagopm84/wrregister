@@ -1,19 +1,17 @@
- <div class="drawer_top_hd">
+<div class="drawer_top_hd">
   <div class="sec_top_hd container-lg">
     <div class="cont_data">
-      <a href="#">
+      <a href="tel:+559933524257">
         <span class="pe-1"><ion-icon name="call"></ion-icon></span>
         <span>(993) 352 4257</span>
       </a>
-      <a href="#">
-        <span class="pe-1"
-          ><ion-icon name="mail-outline"></ion-icon
-        ></span>
-        <span>atencionaclientes@wrregister.com</span>
-      </a>
+      <a href="mailto:atencionaclientes@wrregister.com" class="mail data"
+        ><span class="pe-1"><ion-icon name="mail-outline"></ion-icon></span>
+        <span>atencionaclientes@wrregister.com</span></a
+      >
     </div>
     <div class="cont_linkeos">
-      <a href="#">Próximos cursos</a>
+      <a class="nextcourse" href="#">Próximos cursos</a>
       <a href="#">Web mail</a>
     </div>
   </div>
@@ -21,7 +19,7 @@
 <div class="drawer_bottom_hd">
   <div class="sec_bottom_hd container-lg">
     <div class="cont_brand">
-      <a href="/">
+      <a href="index.html">
         <img
           src="./imgs/logo-wrregister.png"
           alt="Logo World Register Certification"
@@ -30,14 +28,55 @@
       </a>
     </div>
     <nav class="cont_navs_menus">
-      <a class="sec_active" href="/">INICIO</a>
-      <a class="" href="nosotros.html">NOSOTROS</a>
-      <a class="" href="servicios.html">SERVICIOS</a>
-      <a class="" href="documentacion.html">DOCUMENTACIÓN</a>
-      <a class="" href="contacto.html">CONTACTO</a>
+      <a class="a_index" data-seccion="index" href="index.html"> INICIO </a>
+      <a data-seccion="nosotros" href="nosotros.html">NOSOTROS</a>
+      <a data-seccion="servicios" href="servicios.html">SERVICIOS</a>
+      <a data-seccion="documentacion" href="documentacion.html"
+        >DOCUMENTACIÓN</a
+      >
+      <a data-seccion="contacto" href="contacto.html">CONTACTO</a>
     </nav>
     <div class="cont_btns">
-      <a href="#" class="btn btn_secundary">COTIZAR AHORA</a>
+      <a href="contacto.html" class="btn btn_secundary">COTIZAR AHORA</a>
     </div>
+    <span class="btn_menu" >
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
   </div>
 </div>
+
+<script>
+  function checkActual() {
+    var url = window.location.href;
+    console.log("url de la seccion", url);
+
+    $("a[data-seccion='index']").addClass("sec_active");
+
+    if (/index/.test(url)) {
+      $("a[data-seccion='index']").addClass("sec_active");
+    } else if (/nosotros/.test(url)) {
+      $(".a_index").removeClass("sec_active");
+      $("a[data-seccion='nosotros']").addClass("sec_active");
+    } else if (/servicios/.test(url)) {
+      $(".a_index").removeClass("sec_active");
+      $("a[data-seccion='servicios']").addClass("sec_active");
+    } else if (/documentacion/.test(url)) {
+      $(".a_index").removeClass("sec_active");
+      $("a[data-seccion='documentacion']").addClass("sec_active");
+    } else if (/contacto/.test(url)) {
+      $(".a_index").removeClass("sec_active");
+      $("a[data-seccion='contacto']").addClass("sec_active");
+    }
+  }
+  checkActual();
+
+  function menu() {
+    $(".btn_menu").click(function () {
+      $(this).toggleClass('visible_menu');
+      $('.cont_navs_menus').toggleClass('show_menu');
+    });
+  }
+  menu();
+</script>
