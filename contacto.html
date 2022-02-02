@@ -61,7 +61,7 @@
     <section class="wrapper_head_page page_especial">
       <img class="dots" src="./imgs/side-dots-landscape.png" alt="dots" />
       <div class="container-lg">
-        <div class="row">
+        <div class="row ">
           <div class="col-md-6">
             <div class="sec_head_page_info">
               <h6 class="ttls_minimum in_head mb-4">
@@ -79,8 +79,8 @@
 
     <section class="wrapper_contact">
       <div class="container-lg">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row row_contact">
+          <div class="col-md-6 mb-2">
             <div class="sec_info_contact">
               <h3 class="ttl_primary text-center">¿Necesita ayuda?</h3>
               <div class="box_info">
@@ -100,7 +100,7 @@
                   <div class="item_data">
                     <span class="ico"
                       ><ion-icon name="mail-outline"></ion-icon></span
-                    ><a href="" class="data"
+                    ><a href="" class="data text-truncate"
                       >atencionaclientes@wrregister.com</a
                     >
                   </div>
@@ -127,7 +127,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 mb-5 colfirst">
             <div class="sec_info_form">
               <h3 class="ttl_primary text-center">
                 ¿Dudas, Cotizaciones, Sugerencias?
@@ -163,7 +163,7 @@
                       aria-describedby="emailHelp"
                     />
                   </div>
-                  <div class="mb-4 col-md-6">
+                  <div class="mb-4 col-md-12">
                     <label for="org" class="form-label">Organización</label>
                     <input
                       type="text"
@@ -172,17 +172,16 @@
                       aria-describedby="emailHelp"
                     />
                   </div>
-                  <div class="mb-4 col-md-6">
-                    <label for="phone" class="form-label"
-                      >Correo electrónico</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="phone"
-                      aria-describedby="emailHelp"
-                    />
+                  <div class="mb-4 col-md-12">
+                    <label for="cars">Opciones:</label>
+                    <select name="cars" id="cars" class="form-select">
+                      <option value="">Seleccione</option>
+                      <option value="cotizar">Cotizar un servicio</option>
+                      <option value="validar">Validar un certificado</option>
+                      <option value="dudas">Dudas o sugerencias</option>
+                    </select>
                   </div>
+                  
                   <div class="mb-4 col-md-12">
                     <label for="exampleFormControlTextarea1" class="form-label"
                       >Comentarios
