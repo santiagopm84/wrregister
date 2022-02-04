@@ -31,14 +31,15 @@
       <a class="a_index" data-seccion="index" href="index.html"> INICIO </a>
       <a data-seccion="nosotros" href="nosotros.html">NOSOTROS</a>
       <a data-seccion="servicios" href="servicios.html">SERVICIOS</a>
+      <a data-seccion="otros-servicios" href="otros-servicios.html">OTROS SERVICIOS</a>
       <a data-seccion="documentacion" href="documentacion.html"
         >DOCUMENTACIÓN</a
       >
       <a data-seccion="contacto" href="contacto.html">CONTACTO</a>
     </nav>
-    <div class="cont_btns">
+    <!-- <div class="cont_btns">
       <a href="contacto.html" class="btn btn_secundary">COTIZAR AHORA</a>
-    </div>
+    </div> -->
     <span class="btn_menu" >
       <span></span>
       <span></span>
@@ -62,6 +63,9 @@
     } else if (/servicios/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='servicios']").addClass("sec_active");
+    } else if (/otros-servicios/.test(url)) {
+      $(".a_index").removeClass("sec_active");
+      $("a[data-seccion='otros-servicios']").addClass("sec_active");
     } else if (/documentacion/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='documentacion']").addClass("sec_active");
