@@ -11,8 +11,8 @@
       >
     </div>
     <div class="cont_linkeos">
-      <a class="nextcourse" href="#">Próximos cursos</a>
-      <a href="#">Web mail</a>
+      <a class="nextcourse" href="#">Quejas y apelaciones</a>
+      <a href="#">Webmail</a>
     </div>
   </div>
 </div>
@@ -35,6 +35,7 @@
       <a data-seccion="documentacion" href="documentacion.html"
         >DOCUMENTACIÓN</a
       >
+      <a data-seccion="validacion" href="#">VALIDACIÓN</a>
       <a data-seccion="contacto" href="contacto.html">CONTACTO</a>
     </nav>
     <!-- <div class="cont_btns">
@@ -67,6 +68,9 @@
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='otros-servicios']").addClass("sec_active");
     } else if (/documentacion/.test(url)) {
+      $(".a_index").removeClass("sec_active");
+      $("a[data-seccion='documentacion']").addClass("sec_active");
+    } else if (/validacion/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='documentacion']").addClass("sec_active");
     } else if (/contacto/.test(url)) {
