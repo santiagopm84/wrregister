@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Contacto - World Register Certification</title>
+    <title>Vigencia de Certificados - World Register Certification</title>
+    <link rel="icon" type="image/png" href="imgs/ico.png">
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -65,54 +66,47 @@
           <div class="col-md-6">
             <div class="sec_head_page_info">
               <h6 class="ttls_minimum in_head mb-4">
-                <span>V i g e n c i a</span>
+                <span>World Register</span>
               </h6>
-              <h3 class="ttl_home">de Certificados</h3>
-              <!-- <p class="my_paragraph mt-3">
-                World Register pone a su disposición este medio para solicitar
-                información acerca del estatus o autenticidad de cualquier certificado
-                emitido por nuestro organismo.
-              </p> -->
+              <h3 class="ttl_home">Vigencia de Certificados</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="wrapper_contact">
+    <section class="wrapper_contact verications">
       <div class="container-lg">
-        <div class="row row_contact">
-          <div class="col-md-6 mb-2">
-            <div class="sec_info_contact">
-              <h3 class="ttl_primary text-center"></h3>
-              <div class="box_info">
-                <div class="box_item_data">
-                  <div class="item_data">
-                    <span>World Register pone a su disposición este medio para solicitar
-                      información acerca del estatus o autenticidad de cualquier certificado
-                      emitido por nuestro organismo.
-                    </span>
-                  </div>
-                </div>                
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-5 colfirst">
+        <div class="row justify-content-center row_contact">
+          
+          <div class="col-md-8 mb-5 colfirst">
             <div class="sec_info_form">
               <h3 class="ttl_primary text-center">
-                ¿Dudas, Cotizaciones, Sugerencias?
+                Autenticación / Status de certificados
               </h3>
+              <p class="my_paragraph text-center mb-5">World Register pone a su disposición este medio para solicitar
+                información acerca del estatus o autenticidad de cualquier certificado
+                emitido por nuestro organismo.</p>
               <form class="box_form box_shaddow">
                 <div class="row">
                   <div class="mb-4 col-md-12">
                     <label for="name" class="form-label"><b>Datos del solicitante</b></label>
                   </div>
-                  <div class="mb-4 col-md-12">
+                  <div class="mb-4 col-md-6">
                     <label for="name" class="form-label">Nombre completo</label>
                     <input
                       type="text"
                       class="form-control"
                       id="name"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-4 col-md-6">
+                    <label for="org" class="form-label">Correo electrónico</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="org"
                       aria-describedby="emailHelp"
                     />
                   </div>
@@ -125,17 +119,9 @@
                       aria-describedby="telefono"
                     />
                   </div>
-                  <div class="mb-4 col-md-6">
-                    <label for="org" class="form-label">Correo electrónico</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="org"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
+                
                   
-                  <div class="mb-4 col-md-12">
+                  <div class="mb-4 col-md-6">
                     <label for="email" class="form-label"
                       >Organización</label>
                     <input
@@ -145,7 +131,7 @@
                       aria-describedby="emailHelp"
                     />
                   </div>
-                  <div class="mb-4 col-md-12">
+                  <div class="mb-4 col-md-6">
                     <label for="email" class="form-label"
                       >Organización calificada</label>
                     <input
@@ -175,11 +161,10 @@
                       aria-describedby="norma"
                     />
                   </div>
-                  <div class="mb-4 col-md-12"></div>
-                  <p>
-                    Sube un archivo:
-                    <input type="file" name="archivosubido">
-                  </p>
+                  <div class="mb-4 col-md-12">
+                    <label for="formFile" class="form-label">Sube un archivo:</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
                   </div>
                   <div class="mb-4 col-md-12">
                     <label for="exampleFormControlTextarea1" class="form-label"
