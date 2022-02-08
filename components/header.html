@@ -31,11 +31,11 @@
       <a class="a_index" data-seccion="index" href="index.html"> INICIO </a>
       <a data-seccion="nosotros" href="nosotros.html">NOSOTROS</a>
       <a data-seccion="servicios" href="servicios.html">SERVICIOS</a>
-      <a data-seccion="otros-servicios" href="otros-servicios.html">OTROS SERVICIOS</a>
+      <a data-seccion="other-services" href="other-services.html">OTROS SERVICIOS</a>
       <a data-seccion="documentacion" href="documentacion.html"
         >DOCUMENTACIÓN</a
       >
-      <a data-seccion="vigencia" href="vigencia-certificado.html#">VIGENCIA DE CERTIFICADOS</a>
+      <a data-seccion="vigencia" class="maxw trans" href="vigencia-certificado.html#">VIGENCIA DE CERTIFICADOS</a>
       <a data-seccion="contacto" href="contacto.html">CONTACTO</a>
     </nav>
     <!-- <div class="cont_btns">
@@ -64,15 +64,15 @@
     } else if (/servicios/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='servicios']").addClass("sec_active");
-    } else if (/otros-servicios/.test(url)) {
+    } else if (/services/.test(url)) {
       $(".a_index").removeClass("sec_active");
-      $("a[data-seccion='otros-servicios']").addClass("sec_active");
+      $("a[data-seccion='other-services']").addClass("sec_active");
     } else if (/documentacion/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='documentacion']").addClass("sec_active");
     } else if (/vigencia/.test(url)) {
       $(".a_index").removeClass("sec_active");
-      $("a[data-seccion='documentacion']").addClass("sec_active");
+      $("a[data-seccion='vigencia']").addClass("sec_active");
     } else if (/contacto/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='contacto']").addClass("sec_active");
