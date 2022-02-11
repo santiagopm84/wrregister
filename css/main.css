@@ -561,7 +561,7 @@ img {
   display: none;
 }
 .wrapper_certif .sec_info_certif.other .item_certif .my_paragraph {
-  justify-content: center;
+  justify-content: left;
 }
 .wrapper_certif .sec_info_certif .item_certif {
   width: 100%;
