@@ -1,6 +1,6 @@
 :root {
-  --primary_color: #18236c;
-  --secundry_color: #44cbe0;
+  --primary_color: #c55a11;
+  --secundry_color: #548235;
 }
 
 body {
@@ -12,11 +12,18 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: var(--secundry_color);
+  color: #111111;
 }
 
 img {
   max-width: 100%;
+}
+
+.error {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: crimson;
 }
 
 .btn {
@@ -32,6 +39,7 @@ img {
 }
 .btn:hover {
   color: #ffffff;
+  opacity: 0.92;
 }
 .btn.btn_primary {
   background: var(--primary_color);
@@ -110,6 +118,15 @@ img {
   box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
 }
 
+.c_primary {
+  color: var(--primary_color);
+}
+
+.form-check-input:checked {
+  background-color: var(--secundry_color);
+  border-color: var(--secundry_color);
+}
+
 .wrapper_header {
   position: fixed;
   top: 0;
@@ -119,7 +136,7 @@ img {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
 }
 .wrapper_header .drawer_top_hd {
-  background: #12183b;
+  background: var(--primary_color);
   padding: 0.4rem 0;
 }
 .wrapper_header .drawer_top_hd .sec_top_hd {
@@ -216,12 +233,56 @@ img {
   transform: rotate(-45deg) translate(-3px, 1px);
 }
 
+.header__in_section {
+  padding: 3rem 1rem 6rem !important;
+}
+.header__in_section .textright_close {
+  text-align: right;
+  margin-bottom: 0.75rem;
+}
+.header__in_section .textright_close .closebtn {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.header__in_section .textright_close .closebtn:hover {
+  text-decoration: underline;
+}
+
+.wrapper__in_section {
+  margin-top: -3.5rem;
+  padding: 0 1rem;
+}
+.wrapper__in_section form {
+  background: #ffffff;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.wrapper__in_section .div_btns .btn {
+  font-size: 13px !important;
+  display: block;
+  width: 100%;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
 .wrapper_footer {
   color: #ffffff;
   font-size: 0.9rem;
 }
 .wrapper_footer .foot_top {
-  background: #333333;
+  background: #222222;
   padding: 1.5rem 0;
 }
 .wrapper_footer .foot_top .foot_brand img {
@@ -232,7 +293,7 @@ img {
   text-align: right;
 }
 .wrapper_footer .foot_low {
-  background: #1c1c1c;
+  background: #050505;
   text-align: center;
   font-size: 0.8rem;
   padding: 0.25rem;
@@ -251,8 +312,8 @@ img {
 }
 .wrapper_home::after {
   content: "";
-  background: #151e5f;
-  background: linear-gradient(-90deg, rgba(21, 30, 95, 0.9) 0%, rgba(26, 43, 114, 0.75) 54%, rgba(68, 203, 224, 0.75) 100%);
+  background: #274613;
+  background: linear-gradient(5deg, rgba(39, 70, 19, 0.8) 25%, rgba(61, 104, 33, 0.92) 53%);
   top: 0;
   left: 0;
   width: 100%;
@@ -281,7 +342,7 @@ img {
 }
 
 .wrapper_data {
-  margin-top: -40px;
+  margin-top: -45px;
   margin-bottom: 90px;
   position: relative;
   z-index: 1;
@@ -409,8 +470,8 @@ img {
   max-width: 220px;
 }
 .wrapper_experience .drawer_experience {
-  background: #2d3881;
-  background: linear-gradient(180deg, #2d3881 0%, #0e1750 100%);
+  background: #274613;
+  background: linear-gradient(5deg, #274613 15%, #548235 53%);
   padding-bottom: 5rem;
 }
 .wrapper_experience .drawer_experience .container-lg .box_img_experience {
@@ -451,8 +512,8 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #449ee0;
-  background: linear-gradient(338deg, rgba(68, 158, 224, 0.75) 0%, rgba(21, 30, 95, 0.9) 54%);
+  background: #274613;
+  background: linear-gradient(5deg, rgba(39, 70, 19, 0.98) 15%, rgba(84, 130, 53, 0.9) 53%);
 }
 .wrapper_head_page.page_especial {
   padding-bottom: 5rem;
@@ -561,7 +622,7 @@ img {
   display: none;
 }
 .wrapper_certif .sec_info_certif.other .item_certif .my_paragraph {
-  justify-content: left;
+  justify-content: center;
 }
 .wrapper_certif .sec_info_certif .item_certif {
   width: 100%;
@@ -611,8 +672,8 @@ img {
 
 .sec_benefits_others {
   padding: 6rem 0;
-  background: #2d3881;
-  background: linear-gradient(180deg, #2d3881 0%, #0e1750 100%);
+  background: #274613;
+  background: linear-gradient(5deg, #274613 15%, #548235 53%);
   color: #ffffff;
 }
 .sec_benefits_others .ttls_minimum span::after, .sec_benefits_others .ttls_minimum span::before {
@@ -719,8 +780,8 @@ img {
   text-shadow: none !important;
 }
 .wrapper_links_docs .sec_links .box_item_links .item_links:hover {
-  background: #21bae0;
-  background: linear-gradient(338deg, #21bae0 0%, #151e5f 80%);
+  background: #274613;
+  background: linear-gradient(5deg, #274613 15%, #548235 53%);
   color: #ffffff;
 }
 .wrapper_links_docs .sec_links .box_item_links .item_links:hover img {
@@ -783,6 +844,14 @@ img {
   max-width: 500px;
   padding: 1.5rem;
   border-radius: 1rem;
+}
+.wrapper_contact .sec_info_form .close {
+  border: 0;
+  margin-right: 0.5rem;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background: rgba(12, 12, 12, 0.1);
 }
 
 .verications .sec_info_form .box_form {

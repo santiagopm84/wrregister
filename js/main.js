@@ -4,5 +4,6 @@ function loadComponents() {
   $(".wrapper_footer").load("components/footer.html");
   $(".wrapper_experience").load("components/experience.html");
   $(".wrapper_interest").load("components/interest.html");
+  $(".wrapper_footer2").load("../components/footer.html");
 }
 

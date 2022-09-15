@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Vigencia de Certificados - World Register Certification</title>
-    <link rel="icon" type="image/png" href="imgs/ico.png">
+    <title>Vigencia de Certificados - Nova Terra Certificación</title>
+    <link rel="icon" type="image/png" href="imgs/ico.png" />
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -15,15 +15,15 @@
     />
     <meta http-equiv="Pragma" content="no-cache" />
     <!-- Chrome, Firefox OS y Opera -->
-    <meta name="theme-color" content="#18236c" />
+    <meta name="theme-color" content="#c55a11" />
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#18236c" />
+    <meta name="msapplication-navbutton-color" content="#c55a11" />
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#18236c" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#c55a11" />
 
     <meta name="author" content="By Alex P. Montero" />
-    <meta name="application-name" content="Sitio web oficial World Register" />
+    <meta name="application-name" content="Sitio web oficial Nova Terra" />
     <meta
       name="description"
       content="Prestamos servicios de auditoría y certificación de Sistemas de Gestión de la Calidad, Ambiental y de la Seguridad y Salud en el Trabajo"
@@ -31,9 +31,9 @@
 
     <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="World Register" />
-    <meta property="og:url" content="http://www.wrregister.com/" />
-    <meta property="og:site_name" content="World Register" />
+    <meta property="og:title" content="Nova Terra" />
+    <meta property="og:url" content="http://www.novaterra.com/" />
+    <meta property="og:site_name" content="Nova Terra" />
     <meta property="og:image" itemprop="image" content="imgs/bg_seo.jpg" />
     <meta
       property="og:description"
@@ -62,11 +62,11 @@
     <section class="wrapper_head_page page_especial">
       <img class="dots" src="./imgs/side-dots-landscape.png" alt="dots" />
       <div class="container-lg">
-        <div class="row ">
+        <div class="row">
           <div class="col-md-6">
             <div class="sec_head_page_info">
               <h6 class="ttls_minimum in_head mb-4">
-                <span>World Register</span>
+                <span>Nova Terra</span>
               </h6>
               <h3 class="ttl_home">Vigencia</h3>
             </div>
@@ -78,19 +78,27 @@
     <section class="wrapper_contact verications">
       <div class="container-lg">
         <div class="row justify-content-center row_contact">
-          
           <div class="col-md-8 mb-5 colfirst">
             <div class="sec_info_form">
               <h3 class="ttl_primary text-center">
                 Autenticación / Estatus de certificados
               </h3>
-              <p class="my_paragraph text-center mb-5">World Register pone a su disposición este medio para solicitar
-                información acerca del estatus o autenticidad de cualquier certificado
-                emitido por nuestro organismo.</p>
-              <form class="box_form box_shaddow">
+              <p class="my_paragraph text-center mb-5">
+                Nova Terra pone a su disposición este medio para solicitar
+                información acerca del estatus o autenticidad de cualquier
+                certificado emitido por nuestro organismo.
+              </p>
+              <form
+                class="box_form box_shaddow"
+                name="formulario_contacto"
+                id="formulario_contacto"
+                enctype="multipart/form-data"
+              >
                 <div class="row">
                   <div class="mb-4 col-md-12">
-                    <label for="name" class="form-label"><b>Datos del solicitante</b></label>
+                    <label for="name" class="form-label"
+                      ><b>Datos del solicitante</b></label
+                    >
                   </div>
                   <div class="mb-4 col-md-6">
                     <label for="name" class="form-label">Nombre completo</label>
@@ -98,77 +106,97 @@
                       type="text"
                       class="form-control"
                       id="name"
+                      name="name"
                       aria-describedby="emailHelp"
                     />
                   </div>
                   <div class="mb-4 col-md-6">
-                    <label for="org" class="form-label">Correo electrónico</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="org"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
-                  <div class="mb-4 col-md-6">
-                    <label for="telefono" class="form-label">Teléfono de contacto</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="telefono"
-                      aria-describedby="telefono"
-                    />
-                  </div>
-                
-                  
-                  <div class="mb-4 col-md-6">
-                    <label for="email" class="form-label"
-                      >Organización</label>
+                    <label for="org" class="form-label"
+                      >Correo electrónico</label
+                    >
                     <input
                       type="email"
                       class="form-control"
                       id="email"
+                      name="email"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-4 col-md-6">
+                    <label for="telefono" class="form-label"
+                      >Teléfono de contacto</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="telefono"
+                      id="telefono"
+                      aria-describedby="telefono"
+                    />
+                  </div>
+                  <div class="mb-4 col-md-6">
+                    <label for="email" class="form-label">Organización</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="organizacion"
+                      id="organizacion"
                       aria-describedby="emailHelp"
                     />
                   </div>
 
                   <div class="mb-4 col-md-12">
-                    <label for="name" class="form-label"><b>Datos del certificado</b></label>
+                    <label for="name" class="form-label"
+                      ><b>Datos del certificado</b></label
+                    >
                   </div>
                   <div class="mb-4 col-md-6">
                     <label for="email" class="form-label"
-                      >Organización certificada</label>
+                      >Organización certificada</label
+                    >
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
-                      id="email"
+                      id="org_certificada"
+                      name="org_certificada"
                       aria-describedby="emailHelp"
                     />
                   </div>
                   <div class="mb-4 col-md-6">
                     <label for="email" class="form-label"
-                      >No. de certificado</label>
+                      >No. de certificado</label
+                    >
                     <input
-                      type="numero"
+                      type="text"
                       class="form-control"
-                      id="numero"
+                      id="no_certificado"
+                      name="no_certificado"
                       aria-describedby="numero"
                     />
                   </div>
                   <div class="mb-4 col-md-6">
                     <label for="norma" class="form-label"
-                      >Norma(s) certificada(s)</label>
+                      >Norma(s) certificada(s)</label
+                    >
                     <input
-                      type="norma"
+                      type="text"
                       class="form-control"
                       id="norma"
+                      name="norma"
                       aria-describedby="norma"
                     />
                   </div>
                   <div class="mb-4 col-md-12">
-                    <label for="formFile" class="form-label">Adjuntar certificado (solo aplica autenticación):</label>
-                    <input class="form-control" type="file" id="formFile">
-                  </div>
+                    <label for="formFile" class="form-label"
+                      >Adjuntar certificado (solo aplica para
+                      autenticación):</label
+                    >
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="img"
+                      name="img"
+                    />
                   </div>
                   <div class="mb-4 col-md-12">
                     <label for="exampleFormControlTextarea1" class="form-label"
@@ -176,7 +204,8 @@
                     </label>
                     <textarea
                       class="form-control"
-                      id="exampleFormControlTextarea1"
+                      id="mensaje"
+                      name="mensaje"
                       rows="2"
                     ></textarea>
                   </div>
@@ -196,8 +225,17 @@
                       >
                     </div>
                   </div>
+                  <!-- Mensajes de Validación -->
+                  <div class="msg mt-3 mb-3"></div>
                   <div class="col-md-12 text-center">
-                    <button class="btn btn_secundary">Enviar</button>
+                    <button
+                      type="submit"
+                      class="btn btn_primary"
+                      id="btnenviar"
+                      name="btnenviar"
+                    >
+                      Enviar
+                    </button>
                   </div>
                 </div>
               </form>
@@ -221,6 +259,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/appp.js"></script>
     <script src="./js/main.js"></script>
     <script>
       $(document).ready(function () {
